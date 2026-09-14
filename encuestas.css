@@ -1,0 +1,197 @@
+/* =====================================================
+   GELACOLOR — encuestas.css
+   Estilos específicos de la página "Encuestas".
+   Reutiliza las variables y el header/footer definidos
+   en style.css (colores, tipografías, radios, sombras).
+   ===================================================== */
+
+/* ================= BANNER PRINCIPAL ================= */
+.encuestas-banner {
+  width: 100%;
+}
+
+.encuestas-banner__image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= TÍTULO Y SUBTÍTULO ================= */
+.encuestas-titulo {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-top: 48px;
+  margin-bottom: 8px;
+  color: var(--color-text-dark);
+}
+
+.encuestas-titulo::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--color-pink), var(--color-orange));
+  margin: 16px auto 0;
+}
+
+.encuestas-subtitulo {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: 560px;
+  margin: 0 auto 48px;
+  padding: 0 5%;
+  line-height: 1.6;
+}
+
+/* ================= CONTENEDOR DEL FORMULARIO ================= */
+.encuestas-formulario {
+  display: flex;
+  justify-content: center;
+  padding: 0 5%;
+  margin-bottom: 64px;
+}
+
+.encuestas-formulario__contenedor {
+  width: 100%;
+  max-width: 680px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.encuestas-formulario__iframe {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+/* ================= CTA DE CIERRE ================= */
+.encuestas-cta {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 80px;
+  padding: 48px 8%;
+  background-color: var(--color-bg-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.encuestas-cta__title {
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  color: var(--color-text-dark);
+  margin-bottom: 12px;
+}
+
+.encuestas-cta__title::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 2px;
+  background-color: var(--color-purple);
+  vertical-align: -0.15em;
+  animation: gelacolor-blink 0.9s steps(1) infinite;
+}
+
+.encuestas-cta__title--done::after {
+  display: none;
+}
+
+@keyframes gelacolor-blink {
+  50% { opacity: 0; }
+}
+
+.encuestas-cta__text {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.encuestas-cta__button {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--color-pink), var(--color-purple));
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.encuestas-cta__button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.encuestas-cta__botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.encuestas-cta__button--secundario {
+  background: transparent;
+  color: var(--color-pink);
+  border: 2px solid var(--color-pink);
+  box-shadow: none;
+}
+
+.encuestas-cta__button--secundario:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  opacity: 1;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET (≤768px)
+   ===================================================== */
+@media (max-width: 768px) {
+  .encuestas-banner__image {
+    height: 240px;
+  }
+
+  .encuestas-formulario__contenedor {
+    padding: 14px;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — MÓVIL (≤480px)
+   ===================================================== */
+@media (max-width: 480px) {
+  .encuestas-banner__image {
+    height: 180px;
+  }
+
+  .encuestas-formulario {
+    padding: 0 4%;
+  }
+
+  .encuestas-formulario__contenedor {
+    padding: 10px;
+    border-radius: var(--radius-md);
+  }
+
+  .encuestas-cta {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .encuestas-cta__botones {
+    flex-direction: column;
+  }
+
+  .encuestas-cta__button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,221 @@
+/* =====================================================
+   GELACOLOR — contacto.css
+   Estilos específicos de la página "Contacto".
+   Reutiliza las variables y el header/footer definidos
+   en style.css (colores, tipografías, radios, sombras).
+   ===================================================== */
+
+/* ================= BANNER PRINCIPAL ================= */
+.contacto-banner {
+  width: 100%;
+}
+
+.contacto-banner__image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= TÍTULO Y SUBTÍTULO ================= */
+.contacto-titulo {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-top: 48px;
+  margin-bottom: 8px;
+  color: var(--color-text-dark);
+}
+
+.contacto-titulo::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--color-pink), var(--color-orange));
+  margin: 16px auto 0;
+}
+
+.contacto-subtitulo {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: 560px;
+  margin: 0 auto 48px;
+  padding: 0 5%;
+  line-height: 1.6;
+}
+
+/* ================= CTA WHATSAPP DESTACADO ================= */
+.contacto-whatsapp {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto 56px;
+  padding: 48px 8%;
+  background: linear-gradient(135deg, var(--color-green) 0%, #4f9c30 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hover);
+}
+
+.contacto-whatsapp__icono {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contacto-whatsapp__icono-img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.contacto-whatsapp__title {
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.contacto-whatsapp__text {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 24px;
+}
+
+.contacto-whatsapp__button {
+  display: inline-block;
+  background-color: var(--color-white);
+  color: var(--color-green);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px 36px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contacto-whatsapp__button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ================= TARJETAS DE CONTACTO ================= */
+.contacto-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  max-width: var(--container-width);
+  margin: 0 auto 64px;
+  padding: 0 5%;
+}
+
+.contacto-tarjeta {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 32px 20px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+a.contacto-tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-pink);
+}
+
+.contacto-tarjeta--ubicacion {
+  cursor: default;
+}
+
+.contacto-tarjeta__icono {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 14px;
+}
+
+.contacto-tarjeta__title {
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.contacto-tarjeta__text {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* ================= MAPA ================= */
+.contacto-mapa {
+  max-width: var(--container-width);
+  margin: 0 auto 80px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.contacto-mapa__title {
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  color: var(--color-text-dark);
+  margin-bottom: 24px;
+}
+
+.contacto-mapa__contenedor {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--color-border);
+}
+
+.contacto-mapa__iframe {
+  display: block;
+  width: 100%;
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET (≤768px)
+   ===================================================== */
+@media (max-width: 768px) {
+  .contacto-banner__image {
+    height: 240px;
+  }
+
+  .contacto-tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — MÓVIL (≤480px)
+   ===================================================== */
+@media (max-width: 480px) {
+  .contacto-banner__image {
+    height: 180px;
+  }
+
+  .contacto-whatsapp {
+    padding: 40px 6%;
+  }
+
+  .contacto-tarjetas {
+    grid-template-columns: 1fr;
+    padding: 0 6%;
+  }
+
+  .contacto-mapa {
+    padding: 0 6%;
+  }
+
+  .contacto-mapa__iframe {
+    height: 280px;
+  }
+}

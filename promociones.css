@@ -1,0 +1,246 @@
+/* =====================================================
+   GELACOLOR — promociones.css
+   Estilos específicos de la página "Promociones".
+   El selector de cantidad, el botón "Agregar al pedido" y
+   el carrito flotante/panel viven en style.css, compartidos
+   con productos.html.
+   ===================================================== */
+
+/* ================= BANNER PRINCIPAL ================= */
+.promociones-banner {
+  width: 100%;
+}
+
+.promociones-banner__image {
+  width: 100%;
+  height: 610px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= TÍTULO Y SUBTÍTULO ================= */
+.promociones-titulo {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-top: 48px;
+  margin-bottom: 8px;
+  color: var(--color-text-dark);
+}
+
+.promociones-titulo::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--color-pink), var(--color-orange));
+  margin: 16px auto 0;
+}
+
+.promociones-subtitulo {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: 56px;
+}
+
+/* ================= GRID DE PROMOCIONES ================= */
+.promociones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  max-width: var(--container-width);
+  margin: 0 auto 64px;
+  padding: 0 5%;
+}
+
+/* ================= TARJETA DE PROMOCIÓN ================= */
+.promocion-card {
+  position: relative;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px 20px 28px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.promocion-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.promocion-card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.promocion-card__name {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+  color: var(--color-text-dark);
+}
+
+.promocion-card__description {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  min-height: 42px;
+}
+
+/* ================= BADGE POR TIPO DE PROMOCIÓN ================= */
+.promocion-card__badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-soft);
+  z-index: 1;
+}
+
+.promocion-card__badge--combo {
+  background-color: var(--color-purple);
+}
+
+.promocion-card__badge--2x1 {
+  background-color: var(--color-orange);
+}
+
+.promocion-card__badge--descuento {
+  background-color: var(--color-pink);
+}
+
+.promocion-card__badge--finde {
+  background-color: var(--color-yellow);
+  color: var(--color-text-dark);
+}
+
+/* ================= PRECIOS (combos con precio fijo) ================= */
+.promocion-card__precios {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.promocion-card__precio-normal {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.promocion-card__precio-promo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-green);
+  font-size: 1.2rem;
+}
+
+/* ================= BOTÓN WHATSAPP (promos informativas) ================= */
+.promocion-card__whatsapp {
+  display: inline-block;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 11px 24px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  margin-top: auto;
+}
+
+.promocion-card__whatsapp:hover {
+  background-color: #58a038;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ================= CTA FINAL ================= */
+.promociones-cta {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 80px;
+  padding: 48px 8%;
+  background-color: var(--color-bg-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.promociones-cta__title {
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+  color: var(--color-text-dark);
+  margin-bottom: 12px;
+}
+
+.promociones-cta__text {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+.promociones-cta__button {
+  display: inline-block;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.promociones-cta__button:hover {
+  background-color: #58a038;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* =====================================================
+   RESPONSIVE — TABLET (≤768px)
+   ===================================================== */
+@media (max-width: 768px) {
+  .promociones-banner__image {
+    height: 240px;
+  }
+
+  .promociones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =====================================================
+   RESPONSIVE — MÓVIL (≤480px)
+   ===================================================== */
+@media (max-width: 480px) {
+  .promociones-banner__image {
+    height: 180px;
+  }
+
+  .promociones-grid {
+    grid-template-columns: 1fr;
+    padding: 0 6%;
+  }
+
+  .promociones-cta {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}

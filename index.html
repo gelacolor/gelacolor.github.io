@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelacolor - Dulces momentos en cada gelatina</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="header">
+    <div class="header__logo-container">
+      <!-- IMAGEN: Ícono/logo de gelatina de Gelacolor (ej. logo-gelacolor.png) -->
+      <img src="img/logo.png" alt="Logo Gelacolor" class="header__logo-icon">
+      <div class="header__brand">
+        <a href="index.html" class="header__logo-text">Gelacolor</a>
+        <span class="header__slogan">Dulces momentos en cada gelatina</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a href="#inicio" class="nav-menu__link">Inicio</a></li>
+        <li class="nav-menu__item"><a href="nosotros.html" class="nav-menu__link">Nosotros</a></li>
+        <li class="nav-menu__item"><a href="productos.html" class="nav-menu__link">Productos</a></li>
+        <li class="nav-menu__item"><a href="#promociones" class="nav-menu__link">Promociones</a></li>
+        <li class="nav-menu__item"><a href="encuestas.html" class="nav-menu__link">Encuestas</a></li>
+        <li class="nav-menu__item"><a href="contacto.html" class="nav-menu__link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+    </button>
+
+    <div class="header__social-icons">
+      <!-- IMAGEN: Ícono de WhatsApp (ej. icon-whatsapp.svg) -->
+      <a href="https://wa.me/573143119195" class="header__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <img src="img/icon-whats.jpg" alt="WhatsApp" class="header__social-icon">
+      </a>
+      <!-- IMAGEN: Ícono de Instagram (ej. icon-instagram.svg) -->
+      <a href="https://www.instagram.com/gela.color/" class="header__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="img/icon-ig.png " alt="Instagram" class="header__social-icon">
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ===================== SECCIÓN HERO ===================== -->
+    <section id="inicio" class="hero-section">
+      <button class="hero-section__arrow hero-section__arrow--left" aria-label="Anterior">&#10094;</button>
+
+      <div class="hero-section__content">
+        <h1 class="hero-section__title">Dulces momentos en cada gelatina</h1>
+        <a href="productos.html" class="hero-section__button">Ver productos</a>
+      </div>
+
+      <div class="hero-section__image-container">
+        <!-- IMAGEN: Foto principal de gelatina con frutas (fresa y pera) (ej. hero-gelatina.png) -->
+        <img src="img/gelatina-con-frutas.jpg" alt="Gelatina con frutas" class="hero-section__image" id="heroImage">
+      </div>
+
+      <button class="hero-section__arrow hero-section__arrow--right" aria-label="Siguiente">&#10095;</button>
+
+      <div class="hero-section__dots">
+        <span class="hero-section__dot hero-section__dot--active"></span>
+        <span class="hero-section__dot"></span>
+        <span class="hero-section__dot"></span>
+      </div>
+    </section>
+
+    <!-- ===================== TEASER DE PRODUCTOS ===================== -->
+    <section id="productos" class="productos-teaser js-reveal">
+      <div class="productos-teaser__image-container">
+        <img src="img/hero-variedad-sabores.jpg" alt="Variedad de gelatinas Gelacolor" class="productos-teaser__image">
+      </div>
+      <div class="productos-teaser__content">
+        <h2 class="productos-teaser__title">Descubre todos nuestros sabores</h2>
+        <p class="productos-teaser__text">Individuales, medianas, personalizadas y cajas para compartir — arma tu pedido a tu gusto.</p>
+        <a href="productos.html" class="productos-teaser__button">Ver catálogo completo</a>
+      </div>
+    </section>
+
+    <!-- ===================== PROMOCIONES ESPECIALES ===================== -->
+    <section id="promociones" class="promo-section js-reveal">
+      <div class="promo-section__content">
+        <!-- IMAGEN: Ícono de etiqueta de descuento (ej. icon-descuento.svg) -->
+        <img src="img/icon-descuento.png" alt="Ícono de descuento" class="promo-section__icon">
+        <h2 class="promo-section__title">Promociones especiales</h2>
+        <p class="promo-section__text">Descubre nuestras ofertas y combos disponibles.</p>
+        <a href="promociones.html" class="promo-section__button">Ver promociones</a>
+      </div>
+
+      <div class="promo-section__image-container">
+        <!-- IMAGEN: Foto de productos/gelatinas empacadas (ej. promo-productos.png) -->
+        <img src="img/gelatina-promo.avif" alt="Productos empacados Gelacolor" class="promo-section__image">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contacto" class="footer">
+    <a href="https://www.google.com/maps/place/4%C2%B055'12.3%22N+75%C2%B003'40.2%22W/@4.9200886,-75.0637416,17z/data=!3m1!4b1!4m4!3m3!8m2!3d4.9200833!4d-75.0611667?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-location.png" alt="Ubicación" class="footer__icon">
+      <span class="footer__text">Líbano, Tolima</span>
+    </a>
+
+    <a href="https://wa.me/573143119195" class="footer__item" target="_blank" rel="noopener">
+      <!-- IMAGEN: Ícono de teléfono/WhatsApp (ej. icon-phone.svg) -->
+      <img src="img/icon-phone.png" alt="Teléfono" class="footer__icon">
+      <span class="footer__text">314 311 9195</span>
+    </a>
+
+    <a href="https://www.instagram.com/gela.color/" class="footer__item" target="_blank" rel="noopener">
+      <!-- IMAGEN: Ícono de Instagram (ej. icon-instagram.svg) -->
+      <img src="img/icon-ig.png" alt="Instagram" class="footer__icon">
+      <span class="footer__text">@gela.color</span>
+    </a>
+
+    <div class="footer__copyright">
+      <span>&copy; 2026 Gelacolor</span>
+    </div>
+  </footer>
+
+</body>
+<script src="script.js"></script>
+</html>

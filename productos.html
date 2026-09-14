@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Gelacolor</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="header">
+    <div class="header__logo-container">
+      <img src="img/logo.png" alt="Logo Gelacolor" class="header__logo-icon">
+      <div class="header__brand">
+        <a href="index.html" class="header__logo-text">Gelacolor</a>
+        <span class="header__slogan">Dulces momentos en cada gelatina</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Inicio</a></li>
+        <li class="nav-menu__item"><a href="nosotros.html" class="nav-menu__link">Nosotros</a></li>
+        <li class="nav-menu__item"><a href="productos.html" class="nav-menu__link nav-menu__link--active">Productos</a></li>
+        <li class="nav-menu__item"><a href="promociones.html" class="nav-menu__link">Promociones</a></li>
+        <li class="nav-menu__item"><a href="encuestas.html" class="nav-menu__link">Encuestas</a></li>
+        <li class="nav-menu__item"><a href="contacto.html" class="nav-menu__link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+    </button>
+
+    <div class="header__social-icons">
+      <a href="https://wa.me/573143119195" class="header__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <img src="img/icon-whats.jpg" alt="WhatsApp" class="header__social-icon">
+      </a>
+      <a href="https://www.instagram.com/gela.color/" class="header__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="img/icon-ig.png" alt="Instagram" class="header__social-icon">
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <main class="main">
+
+    <!-- Banner de encabezado -->
+    <section class="productos-banner">
+      <img src="img/productos-banner.png" alt="Catálogo de gelatinas Gelacolor" class="productos-banner__image">
+    </section>
+
+    <!-- Título principal -->
+    <h1 class="productos-titulo">Nuestro catálogo</h1>
+    <p class="productos-subtitulo">Descubre todos nuestros sabores, presentaciones y combos</p>
+
+    <!-- Buscador -->
+    <div class="buscador-productos">
+      <input type="text" id="buscadorInput" class="buscador-productos__input" placeholder="Buscar sabor...">
+    </div>
+
+    <!-- Filtro por categoría -->
+    <div class="filtro-categorias">
+      <button class="filtro-categorias__btn filtro-categorias__btn--active" data-categoria="todos">Todos</button>
+      <button class="filtro-categorias__btn" data-categoria="individuales">Individuales</button>
+      <button class="filtro-categorias__btn" data-categoria="medianas">Medianas</button>
+      <button class="filtro-categorias__btn" data-categoria="personalizadas">Personalizadas</button>
+      <button class="filtro-categorias__btn" data-categoria="cajas-combos">Cajas y combos</button>
+    </div>
+
+    <!-- ===================== CATEGORÍA: INDIVIDUALES ===================== -->
+    <section class="categoria-productos" data-categoria="individuales">
+      <h2 class="categoria-productos__title js-reveal">Individuales</h2>
+
+      <div class="categoria-productos__grid">
+
+        <article class="producto-card js-reveal" data-nombre="Gelatina en Vasito" data-presentacion="Individual" data-precio="$3.000">
+          <img src="img/producto-vasito.png" alt="Gelatina en Vasito" class="producto-card__image producto-card__image--zoom">
+          <h3 class="producto-card__name">Gelatina en Vasito</h3>
+          <p class="producto-card__presentacion">Individual</p>
+          <span class="producto-card__precio">$3.000</span>
+          <div class="producto-card__cantidad">
+            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+            <span class="cantidad-valor">1</span>
+            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+          </div>
+          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORÍA: MEDIANAS ===================== -->
+    <section class="categoria-productos" data-categoria="medianas">
+      <h2 class="categoria-productos__title js-reveal">Medianas</h2>
+
+      <div class="categoria-productos__grid">
+
+        <article class="producto-card js-reveal" data-nombre="Gelatina de Sabores" data-presentacion="Mediana" data-precio="$8.000">
+          <img src="img/producto-sabores.png" alt="Gelatina de Sabores" class="producto-card__image producto-card__image--zoom">
+          <h3 class="producto-card__name">Gelatina de Sabores</h3>
+          <p class="producto-card__presentacion">Mediana</p>
+          <span class="producto-card__precio">$8.000</span>
+          <div class="producto-card__cantidad">
+            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+            <span class="cantidad-valor">1</span>
+            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+          </div>
+          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+        </article>
+
+        <article class="producto-card js-reveal" data-nombre="Gelatina Frutal" data-presentacion="Mediana" data-precio="$10.000">
+          <img src="img/producto-frutal.png" alt="Gelatina Frutal" class="producto-card__image producto-card__image--zoom">
+          <h3 class="producto-card__name">Gelatina Frutal</h3>
+          <p class="producto-card__presentacion">Mediana</p>
+          <span class="producto-card__precio">$10.000</span>
+          <div class="producto-card__cantidad">
+            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+            <span class="cantidad-valor">1</span>
+            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+          </div>
+          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+        </article>
+
+        <article class="producto-card js-reveal" data-nombre="Gelatina Arcoíris" data-presentacion="Mediana" data-precio="$12.000">
+          <img src="img/producto-arcoirirs.jpg" alt="Gelatina Arcoíris" class="producto-card__image producto-card__image--zoom">
+          <h3 class="producto-card__name">Gelatina Arcoíris</h3>
+          <p class="producto-card__presentacion">Mediana</p>
+          <span class="producto-card__precio">$12.000</span>
+          <div class="producto-card__cantidad">
+            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+            <span class="cantidad-valor">1</span>
+            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+          </div>
+          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORÍA: PERSONALIZADAS ===================== -->
+    <section class="categoria-productos" data-categoria="personalizadas">
+      <h2 class="categoria-productos__title js-reveal">Personalizadas</h2>
+
+      <div class="categoria-productos__grid">
+
+        <article class="producto-card js-reveal" data-nombre="Gelatina Corazón" data-presentacion="Personalizada" data-precio="Desde $10.000">
+          <img src="img/producto-corazon.jpg" alt="Gelatina Corazón" class="producto-card__image producto-card__image--zoom">
+          <h3 class="producto-card__name">Gelatina Corazón</h3>
+          <p class="producto-card__presentacion">Personalizada</p>
+          <span class="producto-card__precio">Desde $10.000</span>
+          <div class="producto-card__cantidad">
+            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+            <span class="cantidad-valor">1</span>
+            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+          </div>
+          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+        </article>
+
+        <article class="producto-card js-reveal" data-nombre="Gelatina Decorada" data-presentacion="Personalizada" data-precio="Desde $15.000">
+          <img src="img/producto-decorada.jpg" alt="Gelatina Decorada" class="producto-card__image producto-card__image--zoom">
+          <h3 class="producto-card__name">Gelatina Decorada</h3>
+          <p class="producto-card__presentacion">Personalizada</p>
+          <span class="producto-card__precio">Desde $15.000</span>
+          <div class="producto-card__cantidad">
+            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+            <span class="cantidad-valor">1</span>
+            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+          </div>
+          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== CATEGORÍA: CAJAS Y COMBOS ===================== -->
+    <section class="categoria-productos" data-categoria="cajas-combos">
+      <h2 class="categoria-productos__title js-reveal">Cajas y combos</h2>
+
+      <div class="categoria-productos__grid">
+
+        <article class="producto-card js-reveal" data-nombre="Caja Gelacolor" data-presentacion="6 unidades" data-precio="$15.000">
+          <img src="img/producto-caja.jpg" alt="Caja Gelacolor" class="producto-card__image producto-card__image--zoom">
+          <h3 class="producto-card__name">Caja Gelacolor</h3>
+          <p class="producto-card__presentacion">6 unidades</p>
+          <span class="producto-card__precio">$15.000</span>
+          <div class="producto-card__cantidad">
+            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+            <span class="cantidad-valor">1</span>
+            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+          </div>
+          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== PREGUNTAS FRECUENTES ===================== -->
+    <section class="faq-productos js-reveal">
+      <h2 class="faq-productos__title">Preguntas frecuentes</h2>
+
+      <div class="faq-item">
+        <button class="faq-item__pregunta" aria-expanded="false">
+          <span>¿Hacen envíos a domicilio?</span>
+          <span class="faq-item__icono">+</span>
+        </button>
+        <div class="faq-item__respuesta">
+          <p>Sí, realizamos entregas dentro del municipio de Líbano, Tolima. Para veredas cercanas, escríbenos por WhatsApp para confirmar cobertura y costo del envío.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__pregunta" aria-expanded="false">
+          <span>¿Con cuánta anticipación debo pedir una gelatina personalizada?</span>
+          <span class="faq-item__icono">+</span>
+        </button>
+        <div class="faq-item__respuesta">
+          <p>Recomendamos pedir la Gelatina Corazón o Decorada con al menos 24 a 48 horas de anticipación, así garantizamos el diseño y los colores que quieres.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__pregunta" aria-expanded="false">
+          <span>¿Qué métodos de pago aceptan?</span>
+          <span class="faq-item__icono">+</span>
+        </button>
+        <div class="faq-item__respuesta">
+          <p>Aceptamos efectivo y transferencias por Nequi o Daviplata. Te confirmamos los datos al momento de coordinar tu pedido.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__pregunta" aria-expanded="false">
+          <span>¿Puedo pedir sabores o colores que no aparecen en el catálogo?</span>
+          <span class="faq-item__icono">+</span>
+        </button>
+        <div class="faq-item__respuesta">
+          <p>Claro, escríbenos por WhatsApp contándonos tu idea y te confirmamos si es posible junto con el precio.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__pregunta" aria-expanded="false">
+          <span>¿Cuánto tiempo dura la gelatina en buen estado?</span>
+          <span class="faq-item__icono">+</span>
+        </button>
+        <div class="faq-item__respuesta">
+          <p>Recomendamos consumirla dentro de las 48 horas siguientes a la entrega, manteniéndola refrigerada.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-item__pregunta" aria-expanded="false">
+          <span>¿La Caja Gelacolor se puede personalizar con sabores específicos?</span>
+          <span class="faq-item__icono">+</span>
+        </button>
+        <div class="faq-item__respuesta">
+          <p>Sí, puedes elegir los 6 sabores de tu preferencia al hacer el pedido, sujetos a disponibilidad del día.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="productos-cta js-reveal">
+      <h2 class="productos-cta__title">¿No encuentras tu sabor favorito?</h2>
+      <p class="productos-cta__text">Escríbenos y lo preparamos especialmente para ti.</p>
+      <a href="https://wa.me/573143119195?text=Hola%2C%20quiero%20consultar%20por%20un%20sabor%20personalizado" class="productos-cta__button" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </section>
+
+  </main>
+
+  <!-- ===================== CARRITO FLOTANTE ===================== -->
+  <button id="carritoToggle" class="carrito-flotante" aria-label="Ver mi pedido">
+    🛒
+    <span id="carritoContador" class="carrito-flotante__contador">0</span>
+  </button>
+
+  <div id="carritoPanel" class="carrito-panel" aria-hidden="true">
+    <div class="carrito-panel__header">
+      <h3>Tu pedido</h3>
+      <button id="carritoCerrar" class="carrito-panel__cerrar" aria-label="Cerrar pedido">&times;</button>
+    </div>
+
+    <ul id="carritoLista" class="carrito-panel__lista"></ul>
+    <p id="carritoVacio" class="carrito-panel__vacio">Tu pedido está vacío todavía.</p>
+
+    <button id="carritoEnviar" class="carrito-panel__enviar">Enviar pedido por WhatsApp</button>
+  </div>
+
+  <!-- ===================== LIGHTBOX (zoom de imágenes) ===================== -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxCerrar" class="lightbox__cerrar" aria-label="Cerrar imagen">&times;</button>
+    <img id="lightboxImagen" src="" alt="" class="lightbox__imagen">
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <a href="https://www.google.com/maps/place/4%C2%B055'12.3%22N+75%C2%B003'40.2%22W/@4.9200886,-75.0637416,17z/data=!3m1!4b1!4m4!3m3!8m2!3d4.9200833!4d-75.0611667?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-location.png" alt="Ubicación" class="footer__icon">
+      <span class="footer__text">Líbano, Tolima</span>
+    </a>
+
+    <a href="https://wa.me/573143119195" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-phone.png" alt="Teléfono" class="footer__icon">
+      <span class="footer__text">314 311 9195</span>
+    </a>
+
+    <a href="https://www.instagram.com/gela.color/" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-ig.png" alt="Instagram" class="footer__icon">
+      <span class="footer__text">@gela.color</span>
+    </a>
+
+    <div class="footer__copyright">
+      <span>&copy; 2026 Gelacolor</span>
+    </div>
+  </footer>
+
+  <script src="carrito.js"></script>
+  <script src="productos.js"></script>
+</body>
+</html>

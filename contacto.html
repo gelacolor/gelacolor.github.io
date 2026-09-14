@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Gelacolor</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="header">
+    <div class="header__logo-container">
+      <img src="img/logo.png" alt="Logo Gelacolor" class="header__logo-icon">
+      <div class="header__brand">
+        <a href="index.html" class="header__logo-text">Gelacolor</a>
+        <span class="header__slogan">Dulces momentos en cada gelatina</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Inicio</a></li>
+        <li class="nav-menu__item"><a href="nosotros.html" class="nav-menu__link">Nosotros</a></li>
+        <li class="nav-menu__item"><a href="productos.html" class="nav-menu__link">Productos</a></li>
+        <li class="nav-menu__item"><a href="promociones.html" class="nav-menu__link">Promociones</a></li>
+        <li class="nav-menu__item"><a href="encuestas.html" class="nav-menu__link">Encuestas</a></li>
+        <li class="nav-menu__item"><a href="contacto.html" class="nav-menu__link nav-menu__link--active">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+    </button>
+
+    <div class="header__social-icons">
+      <a href="https://wa.me/573143119195" class="header__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <img src="img/icon-whats.jpg" alt="WhatsApp" class="header__social-icon">
+      </a>
+      <a href="https://www.instagram.com/gela.color/" class="header__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="img/icon-ig.png" alt="Instagram" class="header__social-icon">
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <main class="main">
+
+    <!-- Banner de encabezado -->
+    <section class="contacto-banner">
+      <img src="img/contacot-banner.png" alt="Contáctanos - Gelacolor" class="contacto-banner__image">
+    </section>
+
+    <!-- Título principal -->
+    <h1 class="contacto-titulo">Hablemos</h1>
+    <p class="contacto-subtitulo">¿Tienes una pregunta, un pedido especial o quieres saber más? Escríbenos, te respondemos rápido.</p>
+
+    <!-- ===================== CTA WHATSAPP DESTACADO ===================== -->
+    <section class="contacto-whatsapp js-reveal">
+      <div class="contacto-whatsapp__icono">
+        <img src="img/icon-whats.jpg" alt="WhatsApp" class="contacto-whatsapp__icono-img">
+      </div>
+      <h2 class="contacto-whatsapp__title">Escríbenos por WhatsApp</h2>
+      <p class="contacto-whatsapp__text">La forma más rápida de hacer tu pedido o resolver cualquier duda.</p>
+      <a href="https://wa.me/573143119195?text=Hola%2C%20quiero%20hacer%20una%20consulta" class="contacto-whatsapp__button" target="_blank" rel="noopener">314 311 9195</a>
+    </section>
+
+    <!-- ===================== TARJETAS DE CONTACTO ===================== -->
+    <section class="contacto-tarjetas js-reveal">
+
+      <a href="https://wa.me/573143119195" class="contacto-tarjeta" target="_blank" rel="noopener">
+        <img src="img/icon-whats.jpg" alt="WhatsApp" class="contacto-tarjeta__icono">
+        <h3 class="contacto-tarjeta__title">WhatsApp</h3>
+        <p class="contacto-tarjeta__text">314 311 9195</p>
+      </a>
+
+      <a href="https://www.instagram.com/gela.color/" class="contacto-tarjeta" target="_blank" rel="noopener">
+        <img src="img/icon-ig.png" alt="Instagram" class="contacto-tarjeta__icono">
+        <h3 class="contacto-tarjeta__title">Instagram</h3>
+        <p class="contacto-tarjeta__text">@gela.color</p>
+      </a>
+
+      <a href="https://www.google.com/maps/place/4%C2%B055'12.3%22N+75%C2%B003'40.2%22W/@4.9200886,-75.0637416,17z/data=!3m1!4b1!4m4!3m3!8m2!3d4.9200833!4d-75.0611667?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" class="contacto-tarjeta" target="_blank" rel="noopener">
+        <img src="img/icon-location.png" alt="Ubicación" class="contacto-tarjeta__icono">
+        <h3 class="contacto-tarjeta__title">Ubicación</h3>
+        <p class="contacto-tarjeta__text">Líbano, Tolima</p>
+      </a>
+
+    </section>
+
+    <!-- ===================== MAPA ===================== -->
+    <section class="contacto-mapa js-reveal">
+      <h2 class="contacto-mapa__title">Nuestra zona</h2>
+      <div class="contacto-mapa__contenedor">
+        <iframe
+          src="https://www.google.com/maps?q=L%C3%ADbano,+Tolima,+Colombia&output=embed"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="contacto-mapa__iframe"
+          title="Ubicación de Gelacolor en Líbano, Tolima">
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <a href="https://www.google.com/maps/place/4%C2%B055'12.3%22N+75%C2%B003'40.2%22W/@4.9200886,-75.0637416,17z/data=!3m1!4b1!4m4!3m3!8m2!3d4.9200833!4d-75.0611667?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-location.png" alt="Ubicación" class="footer__icon">
+      <span class="footer__text">Líbano, Tolima</span>
+    </a>
+
+    <a href="https://wa.me/573143119195" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-phone.png" alt="Teléfono" class="footer__icon">
+      <span class="footer__text">314 311 9195</span>
+    </a>
+
+    <a href="https://www.instagram.com/gela.color/" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-ig.png" alt="Instagram" class="footer__icon">
+      <span class="footer__text">@gela.color</span>
+    </a>
+
+    <div class="footer__copyright">
+      <span>&copy; 2026 Gelacolor</span>
+    </div>
+  </footer>
+
+  <script src="contacto.js"></script>
+</body>
+</html>

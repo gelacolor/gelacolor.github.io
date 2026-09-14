@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuestas | Gelacolor</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="encuestas.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="header">
+    <div class="header__logo-container">
+      <img src="img/logo.png" alt="Logo Gelacolor" class="header__logo-icon">
+      <div class="header__brand">
+        <a href="index.html" class="header__logo-text">Gelacolor</a>
+        <span class="header__slogan">Dulces momentos en cada gelatina</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Inicio</a></li>
+        <li class="nav-menu__item"><a href="nosotros.html" class="nav-menu__link">Nosotros</a></li>
+        <li class="nav-menu__item"><a href="productos.html" class="nav-menu__link">Productos</a></li>
+        <li class="nav-menu__item"><a href="promociones.html" class="nav-menu__link">Promociones</a></li>
+        <li class="nav-menu__item"><a href="encuestas.html" class="nav-menu__link nav-menu__link--active">Encuestas</a></li>
+        <li class="nav-menu__item"><a href="contacto.html" class="nav-menu__link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+    </button>
+
+    <div class="header__social-icons">
+      <a href="https://wa.me/573143119195" class="header__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <img src="img/icon-whats.jpg" alt="WhatsApp" class="header__social-icon">
+      </a>
+      <a href="https://www.instagram.com/gela.color/" class="header__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="img/icon-ig.png" alt="Instagram" class="header__social-icon">
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <main class="main">
+
+    <!-- Banner de encabezado -->
+    <section class="encuestas-banner">
+      <img src="img/encuestas-banner.jpg" alt="Cuéntanos tu experiencia con Gelacolor" class="encuestas-banner__image">
+    </section>
+
+    <!-- Título principal -->
+    <h1 class="encuestas-titulo">Cuéntanos tu experiencia</h1>
+    <p class="encuestas-subtitulo">Tu opinión nos ayuda a mejorar. Tómate 2 minutos para contarnos cómo fue tu experiencia 💛</p>
+
+    <!-- ===================== FORMULARIO EMBEBIDO ===================== -->
+    <section class="encuestas-formulario js-reveal">
+      <div class="encuestas-formulario__contenedor">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSft62KZhWRaY90YHWqlbSXsyhlr6iwJxefawPIteay1Z8moDw/viewform?embedded=true"
+          width="640"
+          height="1154"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          class="encuestas-formulario__iframe">
+          Cargando…
+        </iframe>
+      </div>
+    </section>
+
+    <!-- ===================== CTA DE CIERRE ===================== -->
+    <section class="encuestas-cta js-reveal">
+      <h2 class="encuestas-cta__title" data-text="¡Gracias por tomarte el tiempo!"></h2>
+      <p class="encuestas-cta__text">Síguenos en Instagram para ver nuestras novedades, promociones y a otros clientes disfrutando Gelacolor.</p>
+      <div class="encuestas-cta__botones">
+        <a href="https://www.instagram.com/gela.color/" class="encuestas-cta__button" target="_blank" rel="noopener">Síguenos en Instagram</a>
+        <a href="productos.html" class="encuestas-cta__button encuestas-cta__button--secundario">Ver catálogo</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <a href="https://www.google.com/maps/place/4%C2%B055'12.3%22N+75%C2%B003'40.2%22W/@4.9200886,-75.0637416,17z/data=!3m1!4b1!4m4!3m3!8m2!3d4.9200833!4d-75.0611667?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-location.png" alt="Ubicación" class="footer__icon">
+      <span class="footer__text">Líbano, Tolima</span>
+    </a>
+
+    <a href="https://wa.me/573143119195" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-phone.png" alt="Teléfono" class="footer__icon">
+      <span class="footer__text">314 311 9195</span>
+    </a>
+
+    <a href="https://www.instagram.com/gela.color/" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-ig.png" alt="Instagram" class="footer__icon">
+      <span class="footer__text">@gela.color</span>
+    </a>
+
+    <div class="footer__copyright">
+      <span>&copy; 2026 Gelacolor</span>
+    </div>
+  </footer>
+
+  <script src="encuestas.js"></script>
+</body>
+</html>

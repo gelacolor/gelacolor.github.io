@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promociones | Gelacolor</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="promociones.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="header">
+    <div class="header__logo-container">
+      <img src="img/logo.png" alt="Logo Gelacolor" class="header__logo-icon">
+      <div class="header__brand">
+        <a href="index.html" class="header__logo-text">Gelacolor</a>
+        <span class="header__slogan">Dulces momentos en cada gelatina</span>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-menu__list">
+        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Inicio</a></li>
+        <li class="nav-menu__item"><a href="nosotros.html" class="nav-menu__link">Nosotros</a></li>
+        <li class="nav-menu__item"><a href="productos.html" class="nav-menu__link">Productos</a></li>
+        <li class="nav-menu__item"><a href="promociones.html" class="nav-menu__link nav-menu__link--active">Promociones</a></li>
+        <li class="nav-menu__item"><a href="encuestas.html" class="nav-menu__link">Encuestas</a></li>
+        <li class="nav-menu__item"><a href="contacto.html" class="nav-menu__link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+      <span class="header__menu-toggle-bar"></span>
+    </button>
+
+    <div class="header__social-icons">
+      <a href="https://wa.me/573143119195" class="header__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <img src="img/icon-whats.jpg" alt="WhatsApp" class="header__social-icon">
+      </a>
+      <a href="https://www.instagram.com/gela.color/" class="header__social-link" aria-label="Instagram" target="_blank" rel="noopener">
+        <img src="img/icon-ig.png" alt="Instagram" class="header__social-icon">
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+  <main class="main">
+
+    <!-- Banner de encabezado -->
+    <section class="promociones-banner">
+      <img src="img/promociones-banner.png" alt="Promociones Gelacolor" class="promociones-banner__image">
+    </section>
+
+    <!-- Título principal -->
+    <h1 class="promociones-titulo">Nuestras promociones</h1>
+    <p class="promociones-subtitulo">Combos, descuentos y ofertas especiales para disfrutar en grande</p>
+
+    <!-- ===================== GRID DE PROMOCIONES ===================== -->
+    <div class="promociones-grid">
+
+      <!-- 1. Combo Familiar -->
+      <article class="promocion-card js-reveal" data-nombre="Combo Familiar" data-presentacion="2 medianas + 1 caja" data-precio="$28.000">
+        <span class="promocion-card__badge promocion-card__badge--combo">Combo</span>
+        <img src="img/promo-combo-familiar.png" alt="Combo Familiar" class="promocion-card__image">
+        <h3 class="promocion-card__name">Combo Familiar</h3>
+        <p class="promocion-card__description">2 gelatinas medianas (sabor a elegir) + 1 Caja Gelacolor de 6 unidades.</p>
+        <div class="promocion-card__precios">
+          <span class="promocion-card__precio-normal">$35.000</span>
+          <span class="promocion-card__precio-promo">$28.000</span>
+        </div>
+        <div class="promocion-card__cantidad">
+          <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+          <span class="cantidad-valor">1</span>
+          <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+        </div>
+        <button class="promocion-card__agregar" type="button">Agregar al pedido</button>
+      </article>
+
+      <!-- 2. 2x1 en Vasitos -->
+      <article class="promocion-card js-reveal">
+        <span class="promocion-card__badge promocion-card__badge--2x1">2x1</span>
+        <img src="img/promo-2x1-vasitos.jpg" alt="2x1 en Vasitos" class="promocion-card__image">
+        <h3 class="promocion-card__name">2x1 en Vasitos</h3>
+        <p class="promocion-card__description">Todos los días: el segundo Vasito Individual va al 50% de descuento.</p>
+        <a href="https://wa.me/573143119195?text=Hola%2C%20quiero%20preguntar%20por%20la%20promo%202x1%20en%20Vasitos" class="promocion-card__whatsapp" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </article>
+
+      <!-- 3. Combo Cumpleaños -->
+      <article class="promocion-card js-reveal" data-nombre="Combo Cumpleaños" data-presentacion="Corazón o Decorada + caja de regalo" data-precio="$32.000">
+        <span class="promocion-card__badge promocion-card__badge--combo">Combo</span>
+        <img src="img/promo-combo-cumpleaños.jpg" alt="Combo Cumpleaños" class="promocion-card__image">
+        <h3 class="promocion-card__name">Combo Cumpleaños</h3>
+        <p class="promocion-card__description">1 Gelatina Corazón o Decorada + 1 Caja Gelacolor de regalo.</p>
+        <div class="promocion-card__precios">
+          <span class="promocion-card__precio-normal">$40.000</span>
+          <span class="promocion-card__precio-promo">$32.000</span>
+        </div>
+        <div class="promocion-card__cantidad">
+          <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+          <span class="cantidad-valor">1</span>
+          <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+        </div>
+        <button class="promocion-card__agregar" type="button">Agregar al pedido</button>
+      </article>
+
+      <!-- 4. Combo Pareja -->
+      <article class="promocion-card js-reveal" data-nombre="Combo Pareja" data-presentacion="2 frutales + 2 vasitos" data-precio="$20.000">
+        <span class="promocion-card__badge promocion-card__badge--combo">Combo</span>
+        <img src="img/promo-combo-pareja.jpg" alt="Combo Pareja" class="promocion-card__image">
+        <h3 class="promocion-card__name">Combo Pareja</h3>
+        <p class="promocion-card__description">2 Gelatinas Frutales + 2 Vasitos Individuales.</p>
+        <div class="promocion-card__precios">
+          <span class="promocion-card__precio-normal">$26.000</span>
+          <span class="promocion-card__precio-promo">$20.000</span>
+        </div>
+        <div class="promocion-card__cantidad">
+          <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+          <span class="cantidad-valor">1</span>
+          <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+        </div>
+        <button class="promocion-card__agregar" type="button">Agregar al pedido</button>
+      </article>
+
+      <!-- 5. Descuento por cantidad -->
+      <article class="promocion-card js-reveal">
+        <span class="promocion-card__badge promocion-card__badge--descuento">Descuento</span>
+        <img src="img/promo-descuento-cantidad.jpg" alt="Descuento por cantidad en Cajas Gelacolor" class="promocion-card__image">
+        <h3 class="promocion-card__name">Descuento por cantidad</h3>
+        <p class="promocion-card__description">Pide 3 o más Cajas Gelacolor (ideal para eventos, fiestas o colegios) y obtén 10% de descuento automático.</p>
+        <a href="https://wa.me/573143119195?text=Hola%2C%20quiero%20preguntar%20por%20el%20descuento%20por%20cantidad%20en%20Cajas%20Gelacolor" class="promocion-card__whatsapp" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </article>
+
+      <!-- 6. Fin de semana arcoíris -->
+      <article class="promocion-card js-reveal">
+        <span class="promocion-card__badge promocion-card__badge--finde">Fin de semana</span>
+        <img src="img/promo-fin-de-semana-arcoiris.jpg" alt="Fin de semana arcoíris" class="promocion-card__image">
+        <h3 class="promocion-card__name">Fin de semana arcoíris</h3>
+        <p class="promocion-card__description">Todos los viernes y sábados, la Gelatina Arcoíris tiene 15% de descuento.</p>
+        <a href="https://wa.me/573143119195?text=Hola%2C%20quiero%20preguntar%20por%20la%20promo%20de%20fin%20de%20semana%20en%20Gelatina%20Arco%C3%ADris" class="promocion-card__whatsapp" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      </article>
+
+    </div>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="promociones-cta js-reveal">
+      <h2 class="promociones-cta__title">¿Tienes dudas sobre alguna promoción?</h2>
+      <p class="promociones-cta__text">Escríbenos y te ayudamos a armar el combo perfecto para tu ocasión.</p>
+      <a href="https://wa.me/573143119195?text=Hola%2C%20quiero%20consultar%20sobre%20las%20promociones" class="promociones-cta__button" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </section>
+
+  </main>
+
+  <!-- ===================== CARRITO FLOTANTE ===================== -->
+  <button id="carritoToggle" class="carrito-flotante" aria-label="Ver mi pedido">
+    🛒
+    <span id="carritoContador" class="carrito-flotante__contador">0</span>
+  </button>
+
+  <div id="carritoPanel" class="carrito-panel" aria-hidden="true">
+    <div class="carrito-panel__header">
+      <h3>Tu pedido</h3>
+      <button id="carritoCerrar" class="carrito-panel__cerrar" aria-label="Cerrar pedido">&times;</button>
+    </div>
+
+    <ul id="carritoLista" class="carrito-panel__lista"></ul>
+    <p id="carritoVacio" class="carrito-panel__vacio">Tu pedido está vacío todavía.</p>
+
+    <button id="carritoEnviar" class="carrito-panel__enviar">Enviar pedido por WhatsApp</button>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <a href="https://www.google.com/maps/place/4%C2%B055'12.3%22N+75%C2%B003'40.2%22W/@4.9200886,-75.0637416,17z/data=!3m1!4b1!4m4!3m3!8m2!3d4.9200833!4d-75.0611667?entry=ttu&g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-location.png" alt="Ubicación" class="footer__icon">
+      <span class="footer__text">Líbano, Tolima</span>
+    </a>
+
+    <a href="https://wa.me/573143119195" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-phone.png" alt="Teléfono" class="footer__icon">
+      <span class="footer__text">314 311 9195</span>
+    </a>
+
+    <a href="https://www.instagram.com/gela.color/" class="footer__item" target="_blank" rel="noopener">
+      <img src="img/icon-ig.png" alt="Instagram" class="footer__icon">
+      <span class="footer__text">@gela.color</span>
+    </a>
+
+    <div class="footer__copyright">
+      <span>&copy; 2026 Gelacolor</span>
+    </div>
+  </footer>
+
+  <script src="carrito.js"></script>
+  <script src="promociones.js"></script>
+</body>
+</html>
