@@ -107,7 +107,8 @@
 /* ================= TARJETAS DE CONTACTO ================= */
 .contacto-tarjetas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 260px));
+  justify-content: center;
   gap: 24px;
   max-width: var(--container-width);
   margin: 0 auto 64px;
@@ -131,10 +132,6 @@ a.contacto-tarjeta:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-hover);
   border-color: var(--color-pink);
-}
-
-.contacto-tarjeta--ubicacion {
-  cursor: default;
 }
 
 .contacto-tarjeta__icono {
