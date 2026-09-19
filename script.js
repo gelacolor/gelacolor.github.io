@@ -47,6 +47,7 @@ function initMenuMovil() {
 function initCarrusel() {
   const heroSection = document.querySelector('.hero-section');
   const imagen = document.getElementById('heroImage');
+  const titulo = document.getElementById('heroTitle');
   const flechaIzq = document.querySelector('.hero-section__arrow--left');
   const flechaDer = document.querySelector('.hero-section__arrow--right');
   const puntos = document.querySelectorAll('.hero-section__dot');
@@ -54,9 +55,9 @@ function initCarrusel() {
   if (!heroSection || !imagen || !puntos.length) return;
 
   const slides = [
-    { src: 'img/gelatina-con-frutas.jpg', alt: 'Gelatina con frutas' },
-    { src: 'img/hero-variedad-sabores.jpg', alt: 'Variedad de sabores Gelacolor' },
-    { src: 'img/hero-familia-disfrutando.jpg', alt: 'Familia disfrutando gelatinas Gelacolor' }
+    { src: 'img/gelatina-con-frutas.jpg', alt: 'Gelatina con frutas', titulo: 'Dulces momentos en cada gelatina' },
+    { src: 'img/hero-variedad-sabores.jpg', alt: 'Variedad de sabores Gelacolor', titulo: 'Todos los sabores que te imaginas' },
+    { src: 'img/hero-familia-disfrutando.jpg', alt: 'Familia disfrutando gelatinas Gelacolor', titulo: 'Para compartir en familia' }
   ];
 
   let indiceActual = 0;
@@ -67,14 +68,18 @@ function initCarrusel() {
   function irASlide(nuevoIndice) {
     indiceActual = (nuevoIndice + slides.length) % slides.length;
 
-    // Fundido de salida
+    // Fundido de salida (imagen + título juntos)
     imagen.style.opacity = '0';
+    if (titulo) titulo.style.opacity = '0';
 
     setTimeout(() => {
       imagen.src = slides[indiceActual].src;
       imagen.alt = slides[indiceActual].alt;
+      if (titulo) titulo.textContent = slides[indiceActual].titulo;
+
       // Fundido de entrada
       imagen.style.opacity = '1';
+      if (titulo) titulo.style.opacity = '1';
     }, DURACION_FUNDIDO);
 
     puntos.forEach((punto, i) => {

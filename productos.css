@@ -93,6 +93,34 @@
   padding: 0 5%;
 }
 
+/* ================= INDIVIDUALES + CAJAS Y COMBOS (en paralelo) ================= */
+.categorias-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: var(--container-width);
+  margin: 0 auto 64px;
+  padding: 0 5%;
+}
+
+.categorias-duo .categoria-productos {
+  max-width: none;
+  margin: 0;
+  padding: 24px;
+  background-color: var(--color-bg-soft);
+  border-radius: var(--radius-lg);
+}
+
+.categoria-productos__grid--single {
+  display: flex;
+  justify-content: center;
+}
+
+.categoria-productos__grid--single .producto-card {
+  width: 100%;
+  max-width: 240px;
+}
+
 .categoria-productos__title {
   font-size: clamp(1.4rem, 2.4vw, 1.8rem);
   color: var(--color-text-dark);
@@ -237,6 +265,10 @@
   .categoria-productos__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .categorias-duo {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =====================================================
@@ -248,7 +280,8 @@
   }
 
   .categoria-productos,
-  .productos-cta {
+  .productos-cta,
+  .categorias-duo {
     padding-left: 6%;
     padding-right: 6%;
   }

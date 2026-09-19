@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos | Gelacolor</title>
-  <link rel="icon" type="image/png" href="img/logo.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="productos.css">
 </head>
@@ -39,7 +38,7 @@
 
     <div class="header__social-icons">
       <a href="https://wa.me/573143119195" class="header__social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
-        <img src="img/icon-whats.jpg" alt="WhatsApp" class="header__social-icon">
+        <img src="img/icon-whats.png" alt="WhatsApp" class="header__social-icon">
       </a>
       <a href="https://www.instagram.com/gela.color/" class="header__social-link" aria-label="Instagram" target="_blank" rel="noopener">
         <img src="img/icon-ig.png" alt="Instagram" class="header__social-icon">
@@ -73,27 +72,52 @@
       <button class="filtro-categorias__btn" data-categoria="cajas-combos">Cajas y combos</button>
     </div>
 
-    <!-- ===================== CATEGORÍA: INDIVIDUALES ===================== -->
-    <section class="categoria-productos" data-categoria="individuales">
-      <h2 class="categoria-productos__title js-reveal">Individuales</h2>
+    <!-- ===================== INDIVIDUALES + CAJAS Y COMBOS (en paralelo) ===================== -->
+    <div class="categorias-duo">
 
-      <div class="categoria-productos__grid">
+      <section class="categoria-productos categoria-productos--duo" data-categoria="individuales">
+        <h2 class="categoria-productos__title js-reveal">Individuales</h2>
 
-        <article class="producto-card js-reveal" data-nombre="Gelatina en Vasito" data-presentacion="Individual" data-precio="$3.000">
-          <img src="img/producto-vasito.png" alt="Gelatina en Vasito" class="producto-card__image producto-card__image--zoom">
-          <h3 class="producto-card__name">Gelatina en Vasito</h3>
-          <p class="producto-card__presentacion">Individual</p>
-          <span class="producto-card__precio">$3.000</span>
-          <div class="producto-card__cantidad">
-            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
-            <span class="cantidad-valor">1</span>
-            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
-          </div>
-          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
-        </article>
+        <div class="categoria-productos__grid categoria-productos__grid--single">
 
-      </div>
-    </section>
+          <article class="producto-card js-reveal" data-nombre="Gelatina en Vasito" data-presentacion="Individual" data-precio="$3.000">
+            <img src="img/producto-vasito.png" alt="Gelatina en Vasito" class="producto-card__image producto-card__image--zoom">
+            <h3 class="producto-card__name">Gelatina en Vasito</h3>
+            <p class="producto-card__presentacion">Individual</p>
+            <span class="producto-card__precio">$3.000</span>
+            <div class="producto-card__cantidad">
+              <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+              <span class="cantidad-valor">1</span>
+              <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+            </div>
+            <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="categoria-productos categoria-productos--duo" data-categoria="cajas-combos">
+        <h2 class="categoria-productos__title js-reveal">Cajas y combos</h2>
+
+        <div class="categoria-productos__grid categoria-productos__grid--single">
+
+          <article class="producto-card js-reveal" data-nombre="Caja Gelacolor" data-presentacion="6 unidades" data-precio="$15.000">
+            <img src="img/producto-caja.jpg" alt="Caja Gelacolor" class="producto-card__image producto-card__image--zoom">
+            <h3 class="producto-card__name">Caja Gelacolor</h3>
+            <p class="producto-card__presentacion">6 unidades</p>
+            <span class="producto-card__precio">$15.000</span>
+            <div class="producto-card__cantidad">
+              <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
+              <span class="cantidad-valor">1</span>
+              <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
+            </div>
+            <button class="producto-card__agregar" type="button">Agregar al pedido</button>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
 
     <!-- ===================== CATEGORÍA: MEDIANAS ===================== -->
     <section class="categoria-productos" data-categoria="medianas">
@@ -167,28 +191,6 @@
           <h3 class="producto-card__name">Gelatina Decorada</h3>
           <p class="producto-card__presentacion">Personalizada</p>
           <span class="producto-card__precio">Desde $15.000</span>
-          <div class="producto-card__cantidad">
-            <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
-            <span class="cantidad-valor">1</span>
-            <button class="cantidad-btn cantidad-btn--mas" type="button" aria-label="Sumar cantidad">+</button>
-          </div>
-          <button class="producto-card__agregar" type="button">Agregar al pedido</button>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ===================== CATEGORÍA: CAJAS Y COMBOS ===================== -->
-    <section class="categoria-productos" data-categoria="cajas-combos">
-      <h2 class="categoria-productos__title js-reveal">Cajas y combos</h2>
-
-      <div class="categoria-productos__grid">
-
-        <article class="producto-card js-reveal" data-nombre="Caja Gelacolor" data-presentacion="6 unidades" data-precio="$15.000">
-          <img src="img/producto-caja.jpg" alt="Caja Gelacolor" class="producto-card__image producto-card__image--zoom">
-          <h3 class="producto-card__name">Caja Gelacolor</h3>
-          <p class="producto-card__presentacion">6 unidades</p>
-          <span class="producto-card__precio">$15.000</span>
           <div class="producto-card__cantidad">
             <button class="cantidad-btn cantidad-btn--menos" type="button" aria-label="Restar cantidad">&minus;</button>
             <span class="cantidad-valor">1</span>

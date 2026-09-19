@@ -284,6 +284,7 @@
      line-height: 1.2;
      margin-bottom: 28px;
      color: var(--color-text-dark);
+     transition: opacity 0.35s ease;
    }
    
    .hero-section__button {
